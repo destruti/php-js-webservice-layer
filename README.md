@@ -11,6 +11,12 @@ Start process with a composer.json
 
 > ##composer install
 
-1.  PHP
-2.  PHPunit
-3.  Selenium2
+*  PHP
+*  PHPunit
+*  Selenium2
+
+*   A list item.
+
+    With multiple paragraphs.
+
+*   Another item in the list.
