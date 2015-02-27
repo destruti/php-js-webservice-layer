@@ -5,10 +5,26 @@
 This project is a concept of layer
 to atend websites, mobile apps and others.
 
-Start process with a composer.json
+## What is a Service?
 
-### Install Features
+A services is an abstraction layer placed on top of the domain model which encapsulates common application logic behind a single API so that it can be easily consumed by different client layers.
 
-> ###composer install
+
+
+## Install Features
+
+###Composer.json
+> 
+> { 
+>    "require": {
+>         "phpunit/phpunit": "4.7.*@dev",
+>         "phpunit/phpunit-selenium": "dev-master",
+>         "phpunit/dbunit": "1.3.*@dev"
+>     }
+> }
+> 
+> 
+> composer install
+> 
 
 Live Action? [Clique aqui](http://webservicelayer.com/)
