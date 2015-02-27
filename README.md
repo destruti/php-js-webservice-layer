@@ -11,12 +11,4 @@ Start process with a composer.json
 
 > ##composer install
 
-*  PHP
-*  PHPunit
-*  Selenium2
-
-*   A list item.
-
-    With multiple paragraphs.
-
-*   Another item in the list.
+Dúvidas? [CLique aqui](http://webservicelayer.com/).
