@@ -7,8 +7,8 @@ to atend websites, mobile apps and others.
 
 Start process with a composer.json
 
-### Header 3
+### Install Features
 
-> ##composer install
+> ###composer install
 
-Dúvidas? [CLique aqui](http://webservicelayer.com/).
+Live Action? [Clique aqui](http://webservicelayer.com/)
