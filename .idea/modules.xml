@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/webservicelayer.iml" filepath="$PROJECT_DIR$/.idea/webservicelayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/slim.iml" filepath="$PROJECT_DIR$/.idea/slim.iml" />
     </modules>
   </component>
 </project>
