@@ -19,6 +19,8 @@ class Worship
     {
         $result = $this->church->findOne(array('_id' => new \MongoId($_id)));
 
+        echo '<br/><center><a href="/remove">Remove All<a/></center><br/><br/>';
+
         foreach ($result as $key => $value) {
 
             if ($key == '_id') {
@@ -37,6 +39,8 @@ class Worship
 
     public function getAllWorships()
     {
+
+        echo '<br/><center><a href="/remove">Remove All<a/></center><br/><br/>';
 
         try {
 
