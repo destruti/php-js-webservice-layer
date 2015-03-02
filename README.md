@@ -5,15 +5,17 @@
 ###WebSite [webservicelayer.com](http://webservicelayer.com/)
 only a web presentation to explain how the system works layers
 
-###Service Layer[webservicelayer.info](http://webservicelayer.info/)
+###Service Layer [webservicelayer.info](http://webservicelayer.info/)
 This project was created to demonstrate the use of a PHP Micro Framework Slim using calls Restfull APIs to make data management.
 This layer should be brought to power websites or mobile applications.
 
 To complement the complexity of the project was implemented one NoSql MongoDB database layer.
 The next step will be to implement unit tests.
 
-###webservicelayer js
+###JS WebServiceLayer
+
 [JS: Insert and Update](http://webservicelayer.com/js/webservicelayer.insert.update.js)
+
 [JS: Select and Delete](http://webservicelayer.com/js/webservicelayer.select.delete.js)
 
 This project intends to carry out communication between the layers.
@@ -25,6 +27,17 @@ To integrate the tip of a non-relational database mongodb with a js file with jq
 A services is an abstraction layer placed on top of the domain model which encapsulates common application logic behind a single API so that it can be easily consumed by different client layers.
 
 ![WebServiceLayer Exp.](http://webservicelayer.com/img/WebServiceLayer_explanation.png)
+
+#Example Usage
+
+##[Example Page](http://webservicelayer.com/example/)
+
+We developed a page with the complete integration of all layers to make it simple to understand the project.
+
+![webservicelayer.Exemp1](http://webservicelayer.com/img/ex1.png)
+![webservicelayer.Exemp2](http://webservicelayer.com/img/ex2.png)
+
+### Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
 
 ##Install Features
 
@@ -95,5 +108,4 @@ http://webservicelayer.info/remove
 
 >phpunit tests/
 
-### Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
 
