@@ -18,7 +18,7 @@ The next step will be to implement unit tests.
 
 A services is an abstraction layer placed on top of the domain model which encapsulates common application logic behind a single API so that it can be easily consumed by different client layers.
 
-![WebServiceLayer](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2012/02/service_diagram.png)
+![WebServiceLayer Exp.](http://webservicelayer.com/img/WebServiceLayer_explanation.png)
 
 ##Install Features
 
