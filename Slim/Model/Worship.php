@@ -41,7 +41,13 @@ class Worship
         try {
 
             if ($this->church->count() == 0){
-                throw new \Exception('DB Church is empty!');
+
+
+                echo "<h1>Database is empty!</h1><br/>";
+                echo "<strong>To try:</strong><br/>";
+                echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://webservicelayer.com/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.com/embed/aJzh0u1DcMk\" }' http://webservicelayer.com/addWorship";
+                echo "<br/><br/><br/>";
+
             }
 
             $results = $this->church->find();
@@ -65,10 +71,6 @@ class Worship
             }
 
         } catch (\Exception $e) {
-
-            echo "<strong>To try:</strong><br/>";
-            echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://webservicelayer.com/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.com/embed/aJzh0u1DcMk\" }' http://webservicelayer.com/addWorship";
-            echo "<br/><br/><br/>";
 
             \Libs\Log::error('DB Church Error: ' . $e->getMessage());
             throw new \Exception('DB Church Error: ' . $e->getMessage());
