@@ -1,10 +1,11 @@
 # Web Service Layer
 
-## A project from Eduardo Destruti
-###Web View[webservicelayer.com](http://webservicelayer.com/)
+## A project from [Eduardo Destruti](http://destruti.com/)
+
+###Web View [webservicelayer.com](http://webservicelayer.com/)
 only a web presentation to explain how the system works layers
 
-###WebApi[webservicelayer.info](http://webservicelayer.info/)
+###WebApi [webservicelayer.info](http://webservicelayer.info/)
 This project was created to demonstrate the use of a PHP Micro Framework Slim using calls Restfull APIs to make data management.
 This layer should be brought to power websites or mobile applications.
 
@@ -13,7 +14,7 @@ The next step will be to implement unit tests.
 
 
 
-## What is a Service?
+## What is a Web Service Layer?
 
 A services is an abstraction layer placed on top of the domain model which encapsulates common application logic behind a single API so that it can be easily consumed by different client layers.
 
