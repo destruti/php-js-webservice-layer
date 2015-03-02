@@ -21,8 +21,8 @@
 			<!-- Top Navigation -->
 			<header>
 				<h1>
-					Web Service Layer
-					<span>some kind of organization calls on the web</span>
+					<img src="img/logo_WSL.png" style="width: 200px;" />
+					<br/>Web Service Layer
 				</h1>
 			</header>
 
@@ -142,7 +142,7 @@
 				</path>
 			</svg>
 			<section class="related">
-				<p>quem somos?</p>
+				<p>WHO WE ARE?</p>
 				<p><a href="http://destruti.com/">Eduardo Destruti</a></p>
 				<p><a href="https://maquinadobem.com">Máquina do Bem</a></p>
 			</section>
