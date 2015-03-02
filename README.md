@@ -11,15 +11,18 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 ![WebServiceLayer](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2012/02/service_diagram.png)
 
-## Install Features
+# Install Features
 
+##Install Curl
 > sudo apt-get install curl
 
+##Install Composer
 > curl -sS https://getcomposer.org/installer | php
 
 > mv composer.phar /usr/local/bin/composer
 
 
+##Install MongoDb
 > sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 
 > echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
