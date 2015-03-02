@@ -90,7 +90,9 @@ class Worship
     {
         $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
         $results = $this->church->find();
-        echo json_encode($results);
+
+        var_export($results, true);
+//        echo json_encode($results);
     }
 
     public function addWorship()
