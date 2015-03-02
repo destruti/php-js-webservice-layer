@@ -57,7 +57,7 @@ A services is an abstraction layer placed on top of the domain model which encap
 > extension=mongo.so
 
 ###Done?
-> sudo /etc/init.d/apache restart
+> sudo /etc/init.d/apache2 restart
 
 > composer install
 
