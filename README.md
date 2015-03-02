@@ -3,8 +3,13 @@
 ## A project from Eduardo Destruti
 ###[webservicelayer.com](http://webservicelayer.com/)
 
-This project is a concept of layer
-to atend websites, mobile apps and others.
+This project was created to demonstrate the use of a PHP Micro Framework Slim using calls Restfull APIs to make data management.
+This layer should be brought to power websites or mobile applications.
+
+To complement the complexity of the project was implemented one NoSql MongoDB database layer.
+The next step will be to implement unit tests.
+
+
 
 ## What is a Service?
 
