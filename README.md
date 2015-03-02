@@ -65,6 +65,9 @@ A services is an abstraction layer placed on top of the domain model which encap
 > composer install
 
 
+#Go to Work
+
+Oh right! Let's find out how this RestFull API application works in practice:
 
 ##Need to view?
 ![WebServiceLayer View](http://webservicelayer.com/img/view_database.png)
