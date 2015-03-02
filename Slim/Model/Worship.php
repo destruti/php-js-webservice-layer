@@ -97,11 +97,12 @@ class Worship
 
     public function view()
     {
-        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
+//        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
         $results = $this->church->find();
+        \Libs\Log::mongo($results);
 
-        $results = $this->church->find();
         foreach ($results as $result) {
+            \Libs\Log::mongo($result);
             var_export($result, true);
         }
     }
