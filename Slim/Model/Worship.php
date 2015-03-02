@@ -14,7 +14,7 @@ class Worship
         $db = $m->selectDB('test');
         $this->church = $db->selectCollection('church');
 
-        $this->instance = $this->instance;
+        $this->instance = \Slim\Slim::getInstance();
 
     }
 
