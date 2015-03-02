@@ -28,7 +28,7 @@ A services is an abstraction layer placed on top of the domain model which encap
 ###Install Composer
 > curl -sS https://getcomposer.org/installer | php
 
-> mv composer.phar /usr/local/bin/composer
+> sudo mv composer.phar /usr/local/bin/composer
 
 
 ###Install MongoDb
