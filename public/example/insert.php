@@ -13,7 +13,20 @@
 </head>
 <body style="text-align: center; font-family: 'PT Sans Narrow', sans-serif; ">
 
+<div>
+    <div style="text-align: right;"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /></a></div>
+    <div style="text-align: left; "><a href="http://webservicelayer.com" target="_blank">
+            <img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a>
+            <span style="font-weight: bold; font-size: 40px; color: #3498db; ">
+                WebServiceLayer
+            </span>
+    </div>
+</div>
+
 <p>
+
+    <br/>
+    <br/>
 
     <br/><br/>Field: campaign &nbsp;&nbsp; <input type="text" id="campaign" name="campaign" value="">
     <br/><br/>Field: pr_name  &nbsp;&nbsp; <input type="text" id="pr_name" name="pr_name" value="">

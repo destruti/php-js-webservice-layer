@@ -30,7 +30,7 @@ class Worship
         $result = $this->church->findOne(array('_id' => new \MongoId($_id)));
 
         echo '<div>';
-        echo '<div style="text-align: right;"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></div>';
+        echo '<div style="text-align: right;"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /></a></div>';
         echo '<div style="text-align: left; "><a href="https://webservicelayer.com" target="_blank"><img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a/></div>';
         echo '</div>';
 
@@ -54,7 +54,7 @@ class Worship
 
         try {
 
-            echo '<div style="text-align: right"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></div>';
+            echo '<div style="text-align: right"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /></a></div>';
             echo '<div style="text-align: left"><a href="https://webservicelayer.com" target="_blank"><img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a/></div>';
 
             if ($this->church->count() == 0){

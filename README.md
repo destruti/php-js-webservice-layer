@@ -2,16 +2,22 @@
 
 ## A project from [Eduardo Destruti](http://destruti.com/)
 
-###Web View [webservicelayer.com](http://webservicelayer.com/)
+###WebSite [webservicelayer.com](http://webservicelayer.com/)
 only a web presentation to explain how the system works layers
 
-###WebApi [webservicelayer.info](http://webservicelayer.info/)
+###Service Layer[webservicelayer.info](http://webservicelayer.info/)
 This project was created to demonstrate the use of a PHP Micro Framework Slim using calls Restfull APIs to make data management.
 This layer should be brought to power websites or mobile applications.
 
 To complement the complexity of the project was implemented one NoSql MongoDB database layer.
 The next step will be to implement unit tests.
 
+###webservicelayer js
+[JS: Insert and Update](http://webservicelayer.com/js/webservicelayer.insert.update.js)
+[JS: Select and Delete](http://webservicelayer.com/js/webservicelayer.select.delete.js)
+
+This project intends to carry out communication between the layers.
+To integrate the tip of a non-relational database mongodb with a js file with jquery ajax requests, we created two files to be integrated into any website.
 
 
 ## What is a Web Service Layer?
@@ -82,8 +88,12 @@ WebApi http://webservicelayer.info
 ##Need to Delete? (Change for current _id)
 > curl -i -X POST -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.info/deleteWorship
 
-
-# Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
-
 ##Need to Clean all database test?
 http://webservicelayer.info/remove
+
+#UnitTest
+
+>phpunit tests/
+
+### Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
+
