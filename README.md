@@ -70,7 +70,7 @@ A services is an abstraction layer placed on top of the domain model which encap
 Oh right! Let's find out how this RestFull API application works in practice:
 
 ##Need to view?
-###WebApi http://webservicelayer.info [Click here](http://webservicelayer.info/)
+WebApi http://webservicelayer.info
 ![WebServiceLayer View](http://webservicelayer.com/img/view_database.png)
 
 ##Need to Add?
