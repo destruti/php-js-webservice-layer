@@ -40,8 +40,6 @@ class Worship
     public function getAllWorships()
     {
 
-        echo '<br/><center><a href="/remove">Remove All<a/></center><br/><br/>';
-
         try {
 
             if ($this->church->count() == 0){
@@ -51,6 +49,10 @@ class Worship
                 echo "<strong>You must just add, with curl method:</strong><br/>";
                 echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://webservicelayer.info/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.info/embed/aJzh0u1DcMk\" }' http://webservicelayer.info/addWorship";
                 echo "<br/><br/><br/>";
+
+            } else {
+
+                echo '<br/><center><a href="/remove">Remove All<a/></center><br/><br/>';
 
             }
 
