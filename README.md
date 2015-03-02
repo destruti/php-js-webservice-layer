@@ -21,15 +21,23 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 ###Composer.json
 > 
+
 > { 
+
 >    "require": {
+
 >         "phpunit/phpunit": "4.7.*@dev",
+
 >         "phpunit/phpunit-selenium": "dev-master",
+
 >         "phpunit/dbunit": "1.3.*@dev"
+
 >     }
+
 > }
-> 
-> 
+
+>
+
 > composer install
 > 
 
