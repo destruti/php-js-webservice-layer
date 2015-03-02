@@ -1,15 +1,15 @@
 {
-    "name": "slim/slim",
+    "name": "webservicelayer",
     "type": "library",
-    "description": "Slim Framework, a PHP micro framework",
-    "keywords": ["microframework","rest","router"],
-    "homepage": "http://github.com/codeguy/Slim",
+    "description": "Web Service Layer working with MongoDB",
+    "keywords": ["webservicelayer","php","mongo","restfull","api"],
+    "homepage": "http://webservicelayer.com",
     "license": "MIT",
     "authors": [
         {
-            "name": "Josh Lockhart",
-            "email": "info@joshlockhart.com",
-            "homepage": "http://www.joshlockhart.com/"
+            "name": "Eduardo Destruti",
+            "email": "limaedu@gmail.com",
+            "homepage": "http://destruti.com/"
         }
     ],
     "require": {
@@ -17,9 +17,6 @@
         "phpunit/phpunit": "4.7.*@dev",
         "phpunit/phpunit-selenium": "dev-master",
         "phpunit/dbunit": "1.3.*@dev"
-    },
-    "suggest": {
-        "ext-mcrypt": "Required for HTTP cookie encryption"
     },
     "autoload": {
         "psr-0": { "Slim": "." }
