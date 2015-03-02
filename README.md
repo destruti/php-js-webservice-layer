@@ -13,6 +13,12 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 ## Install Features
 
+> sudo apt-get install curl
+
+> curl -sS https://getcomposer.org/installer | php
+
+> mv composer.phar /usr/local/bin/composer
+
 ###Composer.json
 > 
 > { 
