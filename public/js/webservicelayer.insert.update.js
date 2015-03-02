@@ -60,7 +60,7 @@ $( document ).ready(function() {
 
                 if (res.ok == '1') {
                     $('#statusMessage').html('Success');
-                    window.location.href = '/ajax/';
+                    window.location.href = '/example/';
                 } else {
                     $('#statusMessage').html('Error');
                 }

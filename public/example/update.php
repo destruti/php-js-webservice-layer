@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Restful API Client</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="../js/webservicelayer.js"></script>
+    <script src="../js/webservicelayer.insert.update.js"></script>
 
 </head>
 <body style="text-align: center; ">
