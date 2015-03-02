@@ -23,8 +23,8 @@ $app->get('/view', function () use ($worship) { $worship->view(); });
 
 $app->post('/addWorship', function () use ($worship) { $worship->addWorship(); });
 
-$app->put('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
+$app->post('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
 
-$app->delete('/deleteWorship', function () use ($worship) { $worship->deleteWorship(); });
+$app->post('/deleteWorship', function () use ($worship) { $worship->deleteWorship(); });
 
 $app->run();

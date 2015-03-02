@@ -97,12 +97,14 @@ class Worship
 
     public function view()
     {
+        $response = array();
         $this->instance->response()->header('Access-Control-Allow-Origin: *');
         $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
         $results = $this->church->find();
         foreach ($results as $result) {
-            echo json_encode($result);
+            $response[] = $result;
         }
+        echo json_encode($response);
     }
 
     public function addWorship()
@@ -111,7 +113,12 @@ class Worship
         $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = $this->instance->request();
         $church = json_decode($request->getBody());
-        \Libs\Log::mongo($church);
+
+        if ($church == null) {
+            throw new \Exception('We dont see any parameters!');
+        }
+
+        if (is_array($church)) $church = $church[0];
 
         $content = array(
             "created"  => new \MongoDate(),
@@ -136,6 +143,12 @@ class Worship
         $request = $this->instance->request();
         $church = json_decode($request->getBody());
         \Libs\Log::mongo($church);
+
+        if ($church == null) {
+            throw new \Exception('We dont see any parameters!');
+        }
+
+        if (is_array($church)) $church = $church[0];
 
         $updateContent = array(
             "updated"  => new \MongoDate(),

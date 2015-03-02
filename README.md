@@ -77,10 +77,13 @@ WebApi http://webservicelayer.info
 > curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ari", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.info/addWorship
 
 ##Need to Update? (Change for current _id)
-> curl -i -X PUT -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.info/updateWorship
+> curl -i -X POST -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.info/updateWorship
 
 ##Need to Delete? (Change for current _id)
-> curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.info/deleteWorship
+> curl -i -X POST -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.info/deleteWorship
+
+
+# Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
 
 ##Need to Clean all database test?
 http://webservicelayer.info/remove
