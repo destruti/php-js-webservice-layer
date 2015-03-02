@@ -1,24 +1,24 @@
 <?php
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 \Slim\Slim::registerAutoloader();
 
 //$app = new \Slim\Slim();
 $app = new \Slim\Slim(array( 'debug' => true ));
 
-$product = new \Slim\Model\Produtos();
+$worship = new \Slim\Model\Worship();
 
-$app->get('/', function () use ($product) { $product->getAllWorships(); });
+$app->get('/', function () use ($worship) { $worship->getAllWorships(); });
 
-$app->get('/church', function () use ($product) { $product->getAllWorships(); });
+$app->get('/church', function () use ($worship) { $worship->getAllWorships(); });
 
-$app->get('/worship/:_id', function ($_id) use ($product) { $product->viewWorship($_id); });
+$app->get('/worship/:_id', function ($_id) use ($worship) { $worship->viewWorship($_id); });
 
-$app->post('/addWorship', function () use ($product) { $product->addWorship(); });
+$app->post('/addWorship', function () use ($worship) { $worship->addWorship(); });
 
-$app->put('/updateWorship', function () use ($product) { $product->updateWorship(); });
+$app->put('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
 
-$app->delete('/deleteWorship', function () use ($product) { $product->deleteWorship(); });
+$app->delete('/deleteWorship', function () use ($worship) { $worship->deleteWorship(); });
 
 $app->run();
