@@ -11,18 +11,18 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 ![WebServiceLayer](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2012/02/service_diagram.png)
 
-# Install Features
+##Install Features
 
-##Install Curl
+###Install Curl
 > sudo apt-get install curl
 
-##Install Composer
+###Install Composer
 > curl -sS https://getcomposer.org/installer | php
 
 > mv composer.phar /usr/local/bin/composer
 
 
-##Install MongoDb
+###Install MongoDb
 > sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 
 > echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
@@ -32,7 +32,6 @@ A services is an abstraction layer placed on top of the domain model which encap
 > sudo apt-get install -y mongodb-org
 
 > sudo apt-get install -y mongodb-org=2.6.1 mongodb-org-server=2.6.1 mongodb-org-shell=2.6.1 mongodb-org-mongos=2.6.1 mongodb-org-tools=2.6.1
-
 
 > echo "mongodb-org hold" | sudo dpkg --set-selections
 
@@ -44,42 +43,16 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 > echo "mongodb-org-tools hold" | sudo dpkg --set-selections
 
-
-##Install PHP - MongoDb
+###Install PHP - MongoDb
 > sudo pecl install mongo
 
 > sudo vim /etc/php5/apache2/php.ini
 
 > extension=mongo.so
 
-
-
-##Done?
+###Done?
 > sudo /etc/init.d/apache restart
 
-
-
-
-
-
-###Composer.json
-> 
-> { 
-
->    "require": {
-
->         "phpunit/phpunit": "4.7.*@dev",
-
->         "phpunit/phpunit-selenium": "dev-master",
-
->         "phpunit/dbunit": "1.3.*@dev"
-
->     }
-
-> }
-
->
 > composer install
-> 
 
-Live Action? [Clique aqui](http://webservicelayer.com/)
+#Live Action? [Clique aqui](http://webservicelayer.com/)
