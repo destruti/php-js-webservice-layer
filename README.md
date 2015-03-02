@@ -45,6 +45,19 @@ A services is an abstraction layer placed on top of the domain model which encap
 > echo "mongodb-org-tools hold" | sudo dpkg --set-selections
 
 
+##Install PHP - MongoDb
+> sudo pecl install mongo
+
+> sudo vim /etc/php5/apache2/php.ini
+
+> extension=mongo.so
+
+
+
+##Done?
+> sudo /etc/init.d/apache restart
+
+
 
 
 
