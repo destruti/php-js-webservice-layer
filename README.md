@@ -37,7 +37,7 @@ We developed a page with the complete integration of all layers to make it simpl
 ![webservicelayer.Exemp1](http://webservicelayer.com/img/ex1.png)
 ![webservicelayer.Exemp2](http://webservicelayer.com/img/ex2.png)
 
-### Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
+Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
 
 ##Install Features
 
