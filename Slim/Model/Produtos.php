@@ -2,7 +2,7 @@
 
 namespace Slim\Model;
 
-class Produtos
+class Worship
 {
 
     private $church;
@@ -23,7 +23,7 @@ class Produtos
 
             if ($key == '_id') {
 
-                echo 'Id -> <a href="http://slim.dev/worship/'.$value.'">'.$value.'</a><br/>';
+                echo 'Id -> <a href="/worship/'.$value.'">'.$value.'</a><br/>';
 
 
             } else {
@@ -52,7 +52,7 @@ class Produtos
 
                     if ($key == '_id') {
 
-                        echo 'Id -> <a href="http://slim.dev/worship/'.$value.'">'.$value.'</a><br/>';
+                        echo 'Id -> <a href="/worship/'.$value.'">'.$value.'</a><br/>';
 
 
                     } else {
@@ -67,7 +67,7 @@ class Produtos
         } catch (\Exception $e) {
 
             echo "<strong>To try:</strong><br/>";
-            echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://slim.dev/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.com/embed/aJzh0u1DcMk\" }' http://slim.dev/addWorship";
+            echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://webservicelayer.com/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.com/embed/aJzh0u1DcMk\" }' http://webservicelayer.com/addWorship";
             echo "<br/><br/><br/>";
 
             \Libs\Log::error('DB Church Error: ' . $e->getMessage());
@@ -79,7 +79,7 @@ class Produtos
     public function addWorship()
     {
 
-        //curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ariovaldo", "mp3_link": "http://slim.dev/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://slim.dev/addWorship
+        //curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ariovaldo", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.com/addWorship
 
         \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = \Slim\Slim::getInstance()->request();
@@ -105,7 +105,7 @@ class Produtos
     public function updateWorship()
     {
 
-        // curl -i -X PUT -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://slim.dev/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://slim.dev/updateWorship
+        // curl -i -X PUT -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.com/updateWorship
 
         \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = \Slim\Slim::getInstance()->request();
@@ -134,7 +134,7 @@ class Produtos
     public function deleteWorship()
     {
 
-        // curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://slim.dev/deleteWorship
+        // curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.com/deleteWorship
 
         \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = \Slim\Slim::getInstance()->request();
