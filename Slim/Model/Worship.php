@@ -62,7 +62,7 @@ class Worship
 
             }
 
-            $results = view
+            $results = $this->church->find();
             foreach ($results as $result) {
 
                 foreach ($result as $key => $value) {
@@ -89,14 +89,12 @@ class Worship
     public function view()
     {
         $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
-        $result = $this->church->find();
-        echo json_encode($result);
+        $results = $this->church->find();
+        echo json_encode($results);
     }
 
     public function addWorship()
     {
-
-        //curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ariovaldo", "mp3_link": "http://webservicelayer.info/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.info/embed/aJzh0u1DcMk" }' http://webservicelayer.info/addWorship
 
         $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = $this->instance->request();
