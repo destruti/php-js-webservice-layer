@@ -44,8 +44,8 @@ class Worship
 
 
                 echo "<h1>Database is empty!</h1><br/>";
-                echo "<strong>To try:</strong><br/>";
-                echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://webservicelayer.com/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.com/embed/aJzh0u1DcMk\" }' http://webservicelayer.com/addWorship";
+                echo "<strong>You must just add, with curl method:</strong><br/>";
+                echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://webservicelayer.info/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.info/embed/aJzh0u1DcMk\" }' http://webservicelayer.info/addWorship";
                 echo "<br/><br/><br/>";
 
             }
@@ -53,14 +53,10 @@ class Worship
             $results = $this->church->find();
             foreach ($results as $result) {
 
-//                $res = var_export($result);
                 foreach ($result as $key => $value) {
 
                     if ($key == '_id') {
-
                         echo 'Id -> <a href="/worship/'.$value.'">'.$value.'</a><br/>';
-
-
                     } else {
                         echo $key . ' -> ' . $value . '<br/>';
                     }
@@ -81,7 +77,7 @@ class Worship
     public function addWorship()
     {
 
-        //curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ariovaldo", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.com/addWorship
+        //curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ariovaldo", "mp3_link": "http://webservicelayer.info/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.info/embed/aJzh0u1DcMk" }' http://webservicelayer.info/addWorship
 
         \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = \Slim\Slim::getInstance()->request();
@@ -107,7 +103,7 @@ class Worship
     public function updateWorship()
     {
 
-        // curl -i -X PUT -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.com/updateWorship
+        // curl -i -X PUT -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://webservicelayer.info/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.info/embed/aJzh0u1DcMk" }' http://webservicelayer.info/updateWorship
 
         \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = \Slim\Slim::getInstance()->request();
@@ -136,7 +132,7 @@ class Worship
     public function deleteWorship()
     {
 
-        // curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.com/deleteWorship
+        // curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.info/deleteWorship
 
         \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = \Slim\Slim::getInstance()->request();
