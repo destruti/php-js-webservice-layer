@@ -51,7 +51,7 @@ class Worship
             if ($this->church->count() == 0){
 
 
-                echo "<h1>Database is empty!</h1><br/>";
+                echo "<br/><h1>Database is empty!</h1><br/>";
                 echo "<strong>You must just add, with curl method:</strong><br/>";
                 echo "curl -i -X POST -H 'Content-Type: application/json' -d '{\"campaign\": \"Natal 2015\", \"pr_name\": \"Ari\", \"mp3_link\": \"http://webservicelayer.info/audios/ari_natal_2015.mp3\", \"yt_link\": \"https://www.youtube.info/embed/aJzh0u1DcMk\" }' http://webservicelayer.info/addWorship";
                 echo "<br/><br/><br/>";
