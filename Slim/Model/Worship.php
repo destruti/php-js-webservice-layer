@@ -99,11 +99,9 @@ class Worship
     {
 //        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
         $results = $this->church->find();
-        \Libs\Log::mongo($results);
-
         foreach ($results as $result) {
             \Libs\Log::mongo($result);
-            var_export($result, true);
+            echo json_encode($result);
         }
     }
 
