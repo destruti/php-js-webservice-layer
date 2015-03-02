@@ -97,6 +97,7 @@ class Worship
 
     public function view()
     {
+        $this->instance->response()->header('Access-Control-Allow-Origin: *');
         $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
         $results = $this->church->find();
         foreach ($results as $result) {
