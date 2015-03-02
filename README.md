@@ -21,7 +21,6 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 ###Composer.json
 > 
-
 > { 
 
 >    "require": {
@@ -37,7 +36,6 @@ A services is an abstraction layer placed on top of the domain model which encap
 > }
 
 >
-
 > composer install
 > 
 
