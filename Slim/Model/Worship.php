@@ -147,8 +147,8 @@ class Worship
 
     public function remove()
     {
-        $result = $this->church->remove();
-        echo json_encode($result);
+        $this->church->remove();
+        \Slim\Slim::getInstance()->redirect('/');
     }
 
 }
