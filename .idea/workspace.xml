@@ -44,17 +44,17 @@
       <file leaf-file-name="Worship.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Slim/Model/Worship.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3101673" vertical-offset="317" max-vertical-offset="3366">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6113256" vertical-offset="371" max-vertical-offset="3366">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding>
-                <marker date="1425305653335" expanded="true" signature="713:730" placeholder="..." />
-                <marker date="1425305653335" expanded="true" signature="713:731" placeholder="..." />
-                <marker date="1425305653335" expanded="true" signature="896:912" placeholder="..." />
-                <marker date="1425305653335" expanded="true" signature="896:914" placeholder="..." />
-                <marker date="1425305653335" expanded="true" signature="1032:1045" placeholder="..." />
-                <marker date="1425305653335" expanded="true" signature="1611:1628" placeholder="..." />
-                <marker date="1425305653335" expanded="true" signature="1797:1813" placeholder="..." />
-                <marker date="1425305653335" expanded="true" signature="1931:1944" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="713:730" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="713:731" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="896:912" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="896:914" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="1032:1045" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="1628:1645" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="1814:1830" placeholder="..." />
+                <marker date="1425305772672" expanded="true" signature="1948:1961" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -263,7 +263,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="27" width="1922" height="1054" extended-state="6" />
+    <frame x="1919" y="27" width="1922" height="1054" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -435,17 +435,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Slim/Model/Worship.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3101673" vertical-offset="317" max-vertical-offset="3366">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.6113256" vertical-offset="371" max-vertical-offset="3366">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
           <folding>
-            <marker date="1425305653335" expanded="true" signature="713:730" placeholder="..." />
-            <marker date="1425305653335" expanded="true" signature="713:731" placeholder="..." />
-            <marker date="1425305653335" expanded="true" signature="896:912" placeholder="..." />
-            <marker date="1425305653335" expanded="true" signature="896:914" placeholder="..." />
-            <marker date="1425305653335" expanded="true" signature="1032:1045" placeholder="..." />
-            <marker date="1425305653335" expanded="true" signature="1611:1628" placeholder="..." />
-            <marker date="1425305653335" expanded="true" signature="1797:1813" placeholder="..." />
-            <marker date="1425305653335" expanded="true" signature="1931:1944" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="713:730" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="713:731" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="896:912" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="896:914" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="1032:1045" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="1628:1645" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="1814:1830" placeholder="..." />
+            <marker date="1425305772672" expanded="true" signature="1948:1961" placeholder="..." />
           </folding>
         </state>
       </provider>

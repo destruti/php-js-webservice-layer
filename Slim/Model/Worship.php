@@ -34,7 +34,7 @@ class Worship
         echo '<div style="text-align: left; "><a href="https://webservicelayer.com" target="_blank"><img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a/></div>';
         echo '</div>';
 
-        echo '<br/><br/><a href="/">GoBack!<a/><br/><br/><br/>';
+        echo '<br/><br/><a href="/">GoBack!<a/><br/><br/><br/><center>';
 
         foreach ($result as $key => $value) {
 
@@ -45,7 +45,7 @@ class Worship
             }
         }
 
-        echo '<br/><br/><br/>';
+        echo '</center><br/><br/><br/>';
 
     }
 
