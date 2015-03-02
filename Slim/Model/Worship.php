@@ -132,8 +132,6 @@ class Worship
     public function deleteWorship()
     {
 
-        // curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.info/deleteWorship
-
         \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
         $request = \Slim\Slim::getInstance()->request();
         $church = json_decode($request->getBody());
@@ -145,6 +143,12 @@ class Worship
 
         echo json_encode($result);
 
+    }
+
+    public function remove()
+    {
+        $result = $this->church->remove();
+        echo json_encode($result);
     }
 
 }

@@ -15,6 +15,8 @@ $app->get('/church', function () use ($worship) { $worship->getAllWorships(); })
 
 $app->get('/worship/:_id', function ($_id) use ($worship) { $worship->viewWorship($_id); });
 
+$app->get('/remove', function () use ($worship) { $worship->remove(); });
+
 $app->post('/addWorship', function () use ($worship) { $worship->addWorship(); });
 
 $app->put('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
