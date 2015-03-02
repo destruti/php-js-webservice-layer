@@ -17,6 +17,8 @@ $app->get('/worship/:_id', function ($_id) use ($worship) { $worship->viewWorshi
 
 $app->get('/remove', function () use ($worship) { $worship->remove(); });
 
+$app->get('/view', function () use ($worship) { $worship->view(); });
+
 $app->post('/addWorship', function () use ($worship) { $worship->addWorship(); });
 
 $app->put('/updateWorship', function () use ($worship) { $worship->updateWorship(); });

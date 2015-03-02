@@ -62,7 +62,7 @@ class Worship
 
             }
 
-            $results = $this->church->find();
+            $results = view
             foreach ($results as $result) {
 
                 foreach ($result as $key => $value) {
@@ -84,6 +84,13 @@ class Worship
             throw new \Exception('DB Church Error: ' . $e->getMessage());
         }
 
+    }
+
+    public function view()
+    {
+        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
+        $result = $this->church->find();
+        echo json_encode($result);
     }
 
     public function addWorship()
