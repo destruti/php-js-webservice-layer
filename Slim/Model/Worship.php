@@ -18,20 +18,28 @@ class Worship
 
     }
 
+    public function removeOne($_id)
+    {
+        $row = $this->church->findOne(array('_id' => new \MongoId($_id)));
+        $this->church->remove(array('_id'  => $row['_id']));
+        $this->instance->redirect('/');
+    }
+
     public function viewWorship($_id)
     {
         $result = $this->church->findOne(array('_id' => new \MongoId($_id)));
 
-        echo '<p style="text-align: right"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></p>';
-        echo '<br/><center><a href="/remove">Remove All<a/></center><br/><br/>';
+        echo '<div>';
+        echo '<div style="text-align: right;"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></div>';
+        echo '<div style="text-align: left; "><a href="https://webservicelayer.com" target="_blank"><img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a/></div>';
+        echo '</div>';
+
+        echo '<br/><br/><a href="/">GoBack!<a/><br/><br/><br/>';
 
         foreach ($result as $key => $value) {
 
             if ($key == '_id') {
-
-                echo 'Id -> <a href="/worship/'.$value.'">'.$value.'</a><br/>';
-
-
+                echo 'Id -> <a href="/worship/'.$value.'">'.$value.'</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/removeOne/'.$value.'">(Remove)</a> <br/>';
             } else {
                 echo $key . ' -> ' . $value . '<br/>';
             }
@@ -46,7 +54,8 @@ class Worship
 
         try {
 
-            echo '<p style="text-align: right"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></p>';
+            echo '<div style="text-align: right"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></div>';
+            echo '<div style="text-align: left"><a href="https://webservicelayer.com" target="_blank"><img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a/></div>';
 
             if ($this->church->count() == 0){
 
@@ -58,7 +67,7 @@ class Worship
 
             } else {
 
-                echo '<br/><center><a href="/remove">Remove All<a/></center><br/><br/>';
+                echo '<br/><center><a href="/remove">Remove All _Ids<a/></center><br/><br/>';
 
             }
 
@@ -68,7 +77,7 @@ class Worship
                 foreach ($result as $key => $value) {
 
                     if ($key == '_id') {
-                        echo 'Id -> <a href="/worship/'.$value.'">'.$value.'</a><br/>';
+                        echo 'Id -> <a href="/worship/'.$value.'">'.$value.'</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/removeOne/'.$value.'">(Remove)</a> <br/>';
                     } else {
                         echo $key . ' -> ' . $value . '<br/>';
                     }
