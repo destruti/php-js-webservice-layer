@@ -1,8 +1,10 @@
 # Web Service Layer
 
 ## A project from Eduardo Destruti
-###[webservicelayer.com](http://webservicelayer.com/)
+###Web View[webservicelayer.com](http://webservicelayer.com/)
+only a web presentation to explain how the system works layers
 
+###WebApi[webservicelayer.info](http://webservicelayer.info/)
 This project was created to demonstrate the use of a PHP Micro Framework Slim using calls Restfull APIs to make data management.
 This layer should be brought to power websites or mobile applications.
 
