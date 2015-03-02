@@ -6,12 +6,15 @@ class Worship
 {
 
     private $church;
+    private $instance;
 
     public function __construct() {
 
         $m = new \MongoClient();
         $db = $m->selectDB('test');
         $this->church = $db->selectCollection('church');
+
+        $this->instance = $this->instance;
 
     }
 
@@ -88,8 +91,8 @@ class Worship
 
         //curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ariovaldo", "mp3_link": "http://webservicelayer.info/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.info/embed/aJzh0u1DcMk" }' http://webservicelayer.info/addWorship
 
-        \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
-        $request = \Slim\Slim::getInstance()->request();
+        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
+        $request = $this->instance->request();
         $church = json_decode($request->getBody());
         \Libs\Log::mongo($church);
 
@@ -112,10 +115,8 @@ class Worship
     public function updateWorship()
     {
 
-        // curl -i -X PUT -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://webservicelayer.info/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.info/embed/aJzh0u1DcMk" }' http://webservicelayer.info/updateWorship
-
-        \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
-        $request = \Slim\Slim::getInstance()->request();
+        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
+        $request = $this->instance->request();
         $church = json_decode($request->getBody());
         \Libs\Log::mongo($church);
 
@@ -141,8 +142,8 @@ class Worship
     public function deleteWorship()
     {
 
-        \Slim\Slim::getInstance()->response()->header('Content-Type', 'application/json;charset=utf-8');
-        $request = \Slim\Slim::getInstance()->request();
+        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
+        $request = $this->instance->request();
         $church = json_decode($request->getBody());
         \Libs\Log::mongo($church);
 
@@ -157,7 +158,7 @@ class Worship
     public function remove()
     {
         $this->church->remove();
-        \Slim\Slim::getInstance()->redirect('/');
+        $this->instance->redirect('/');
     }
 
 }
