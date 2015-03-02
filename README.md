@@ -66,11 +66,14 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 
 
-##Need Add?
+##Need to view?
+![WebServiceLayer View](http://webservicelayer.com/img/view_database.png)
+
+##Need to Add?
 > curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ari", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.com/addWorship
 
-##Need Update? (Change for current _id)
+##Need to Update? (Change for current _id)
 > curl -i -X PUT -H 'Content-Type: application/json' -d '{"_id": "54f37889479ed0ad188b4567", "campaign": "Natal 2015", "pr_name": "Ari Palmeiras", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.com/updateWorship
 
-##Need Delete? (Change for current _id)
+##Need to Delete? (Change for current _id)
 > curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.com/deleteWorship
