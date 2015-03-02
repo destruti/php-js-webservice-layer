@@ -22,7 +22,7 @@ class Worship
     {
         $result = $this->church->findOne(array('_id' => new \MongoId($_id)));
 
-        echo '<br/><center><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.png" /><a/></center>';
+        echo '<br/><center><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></center>';
         echo '<br/><center><a href="/remove">Remove All<a/></center><br/><br/>';
 
         foreach ($result as $key => $value) {
@@ -46,7 +46,7 @@ class Worship
 
         try {
 
-            echo '<br/><center><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.png" /><a/></center>';
+            echo '<br/><center><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /><a/></center>';
 
             if ($this->church->count() == 0){
 
