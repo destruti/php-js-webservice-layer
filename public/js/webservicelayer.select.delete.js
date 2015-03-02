@@ -30,31 +30,34 @@ $( document ).ready(function() {
         var realArray = $.makeArray( data );
 
         $('#here_table').append( '' +
-            '<table style="width: 100%;" border="1">' +
-            '<tr>' +
-            '<td style="width: 20%; font-weight: bold; " >_id</td>' +
-            '<td style="width: 20%; font-weight: bold; " >campaign</td>' +
-            '<td style="width: 20%; font-weight: bold; " >pr_name</td>' +
-            '<td style="width: 20%; font-weight: bold; " >created</td>' +
-            '<td style="width: 10%; font-weight: bold; " ></td>' +
-            '<td style="width: 10%; font-weight: bold; " ></td>' +
-            '</tr>' +
+            '<table style="width: 100%;" class="collapse">' +
+                '<tr>' +
+                    '<td style="width: 20%; font-weight: bold; " >_id</td>' +
+                    '<td style="width: 20%; font-weight: bold; " >campaign</td>' +
+                    '<td style="width: 20%; font-weight: bold; " >pr_name</td>' +
+                    '<td style="width: 20%; font-weight: bold; " >created</td>' +
+                    '<td style="width: 10%; font-weight: bold; " ></td>' +
+                    '<td style="width: 10%; font-weight: bold; " ></td>' +
+                '</tr>' +
             '</table>'
         );
 
         $.map( realArray, function( obj ) {
 
-            $('#here_table').append( '<table style="width: 100%;" border="1">' +
-                '<tr >' +
-                '<td style="width: 20%;" >'+obj._id.$id+'</td>' +
-                '<td style="width: 20%;" >'+obj.campaign+'</td>' +
-                '<td style="width: 20%;" >'+obj.pr_name+'</td>' +
-                '<td style="width: 20%;" >'+obj.created.sec+obj.created.usec+'</td>' +
+            $('#here_table').append( '' +
+                '<table style="width: 100%;" class="collapse">' +
+                    '<tr >' +
 
-                '<td style="width: 10%; cursor: pointer; " onclick="window.location.href=\'update.php?_id='+obj._id.$id+'&campaign='+obj.campaign+'&pr_name='+obj.pr_name+'&mp3_link='+obj.mp3_link+'&yt_link='+obj.yt_link+'\'" >Edit</td>' +
-                '<td style="width: 10%; cursor: pointer; " class="removeOne" id="'+obj._id.$id+'">Remove</td>' +
+                        '<td style="width: 20%;" >'+obj._id.$id+'</td>' +
+                        '<td style="width: 20%;" >'+obj.campaign+'</td>' +
+                        '<td style="width: 20%;" >'+obj.pr_name+'</td>' +
+                        '<td style="width: 20%;" >'+obj.created.sec+obj.created.usec+'</td>' +
 
-                '</tr>'
+                        '<td style="width: 10%; cursor: pointer; color: green; font-weight: bold; " onclick="window.location.href=\'update.php?_id='+obj._id.$id+'&campaign='+obj.campaign+'&pr_name='+obj.pr_name+'&mp3_link='+obj.mp3_link+'&yt_link='+obj.yt_link+'\'" >Edit</td>' +
+                        '<td style="width: 10%; cursor: pointer; color: red; font-weight: bold; " class="removeOne" id="'+obj._id.$id+'">Remove</td>' +
+
+                    '</tr>' +
+                '</table>'
             );
 
         });
