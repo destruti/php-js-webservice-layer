@@ -81,3 +81,6 @@ WebApi http://webservicelayer.info
 
 ##Need to Delete? (Change for current _id)
 > curl -i -X DELETE -H 'Content-Type: application/json' -d '{"_id": "54f3822d479ed0b0188b4567"}' http://webservicelayer.com/deleteWorship
+
+##Need to Clean all database test?
+http://webservicelayer.info/remove
