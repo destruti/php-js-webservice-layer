@@ -15,7 +15,7 @@
 
                 try {
 
-                    var url = "http://webservicelayer.info.dev/view";
+                    var url = "http://webservicelayer.info/view";
                     var jqxhr = $.ajax( url )
                     .done(function(data) {
 
@@ -81,7 +81,7 @@
 
                     try {
 
-                        var url = "http://webservicelayer.info.dev/removeOne/"+this.id;
+                        var url = "http://webservicelayer.info/removeOne/"+this.id;
                         var jqxhr = $.ajax( url )
                             .done(function(data) {
                                 $('#statusMessage').html('Success');
