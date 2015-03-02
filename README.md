@@ -71,7 +71,7 @@ Oh right! Let's find out how this RestFull API application works in practice:
 
 ##Need to view?
 WebApi http://webservicelayer.info
-![WebServiceLayer View](http://webservicelayer.com/img/view_database.png)
+http://webservicelayer.com/img/view_database.png
 
 ##Need to Add?
 > curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ari", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.info/addWorship

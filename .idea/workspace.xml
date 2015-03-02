@@ -31,20 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.24" vertical-offset="783" max-vertical-offset="1638">
-              <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.6210526" vertical-offset="783" max-vertical-offset="1638">
+              <caret line="73" column="48" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Worship.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Worship.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Slim/Model/Worship.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19174758" vertical-offset="292" max-vertical-offset="3060">
+            <state vertical-scroll-proportion="-2.8214285" vertical-offset="292" max-vertical-offset="3060">
               <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <marker date="1425273230271" expanded="true" signature="464:481" placeholder="..." />
@@ -69,8 +69,8 @@
         <option value="$PROJECT_DIR$/Slim/Model/Produtos.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/info/index.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Slim/Model/Worship.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -391,22 +391,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.24" vertical-offset="783" max-vertical-offset="1638">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Slim/Model/Worship.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19174758" vertical-offset="292" max-vertical-offset="3060">
+        <state vertical-scroll-proportion="-2.8214285" vertical-offset="292" max-vertical-offset="3060">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <marker date="1425273230271" expanded="true" signature="464:481" placeholder="..." />
             <marker date="1425273230271" expanded="true" signature="1091:1108" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6210526" vertical-offset="783" max-vertical-offset="1638">
+          <caret line="73" column="48" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
