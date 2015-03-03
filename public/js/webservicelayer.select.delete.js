@@ -1,4 +1,3 @@
-
 $( document ).ready(function() {
 
     viewRegisters();
@@ -53,7 +52,7 @@ $( document ).ready(function() {
                         '<td style="width: 20%;" >'+obj.pr_name+'</td>' +
                         '<td style="width: 20%;" >'+obj.created.sec+obj.created.usec+'</td>' +
 
-                        '<td style="width: 10%; cursor: pointer; color: green; font-weight: bold; " onclick="window.location.href=\'update.php?_id='+obj._id.$id+'&campaign='+obj.campaign+'&pr_name='+obj.pr_name+'&mp3_link='+obj.mp3_link+'&yt_link='+obj.yt_link+'\'" >Edit</td>' +
+                        '<td style="width: 10%; cursor: pointer; color: green; font-weight: bold; " onclick="window.location.href=\'update.html?_id='+obj._id.$id+'&campaign='+obj.campaign+'&pr_name='+obj.pr_name+'&mp3_link='+obj.mp3_link+'&yt_link='+obj.yt_link+'\'" >Edit</td>' +
                         '<td style="width: 10%; cursor: pointer; color: red; font-weight: bold; " class="removeOne" id="'+obj._id.$id+'">Remove</td>' +
 
                     '</tr>' +
@@ -63,7 +62,7 @@ $( document ).ready(function() {
         });
 
         $('#here_table').append( '<br/><br/><br/>' );
-        $('#here_table').append( '<input onclick="window.location.href=\'insert.php\'" type="button" id="add_BTN" value="Add New Row" />' );
+        $('#here_table').append( '<input onclick="window.location.href=\'insert.html\'" type="button" id="add_BTN" value="Add New Row" />' );
 
         deleteIfNeed();
 

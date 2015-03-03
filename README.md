@@ -30,12 +30,16 @@ A services is an abstraction layer placed on top of the domain model which encap
 
 #Example Usage
 
-##[Example Page](http://webservicelayer.com/example/)
+##[Example Page -> http://webservicelayer.com/example/](http://webservicelayer.com/example/)
 
 We developed a page with the complete integration of all layers to make it simple to understand the project.
 
-![webservicelayer.Exemp1](http://webservicelayer.com/img/ex1.png)
-![webservicelayer.Exemp2](http://webservicelayer.com/img/ex2.png)
+![webservicelayer.Exemp1](http://webservicelayer.com/img/html.png)
+
+This example was developed only with .html files and .js, without any back-end language.
+
+![webservicelayer.Exemp1](http://webservicelayer.com/img/ex_1.png)
+![webservicelayer.Exemp2](http://webservicelayer.com/img/ex_2.png)
 
 Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
 

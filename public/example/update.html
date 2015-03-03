@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>WebServiceLayer - Example</title>
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/webservicelayer.insert.update.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+
+            var $_GET = {};
+
+            document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+                function decode(s) {
+                    return decodeURIComponent(s.split("+").join(" "));
+                }
+
+                $_GET[decode(arguments[1])] = decode(arguments[2]);
+            });
+
+            $('#_id').val($_GET._id);
+            $('#campaign').val($_GET.campaign);
+            $('#pr_name').val($_GET.pr_name);
+            $('#mp3_link').val($_GET.mp3_link);
+            $('#yt_link').val($_GET.yt_link);
+
+        });
+
+
+    </script>
+
+</head>
+<body style="text-align: center; font-family: 'PT Sans Narrow', sans-serif; ">
+
+<div>
+    <div style="text-align: right;"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /></a></div>
+    <div style="text-align: left; "><a href="http://webservicelayer.com" target="_blank">
+            <img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a>
+            <span style="font-weight: bold; font-size: 40px; color: #3498db; ">
+                WebServiceLayer
+            </span>
+    </div>
+</div>
+
+<p>
+
+    <br/>
+    <br/>
+
+    <br/><br/>Field: _id      &nbsp;&nbsp; <input type="text" id="_id" name="_id" value="" disabled>
+    <br/><br/>Field: campaign &nbsp;&nbsp; <input type="text" id="campaign" name="campaign" >
+    <br/><br/>Field: pr_name  &nbsp;&nbsp; <input type="text" id="pr_name" name="pr_name" value="">
+    <br/><br/>Field: mp3_link &nbsp;&nbsp; <input type="text" id="mp3_link" name="mp3_link" value="">
+    <br/><br/>Field: yt_link  &nbsp;&nbsp; <input type="text" id="yt_link" name="yt_link" value="">
+
+    <br/><br/>
+    <br/><br/>
+
+    <input type="button" id="update_btn" value="UPDATE">
+
+    <br/><br/>
+    <div id="statusMessage"></div>
+
+</p>
+
+</body>
+</html>
