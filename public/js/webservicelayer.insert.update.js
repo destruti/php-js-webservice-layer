@@ -10,7 +10,7 @@ $( document ).ready(function() {
 
         $('#statusMessage').html('Waiting Insert...');
 
-        url = "http://webservicelayer.info/addWorship";
+        url = "http://webservicelayer.info.dev/addWorship";
         makeCall(url, data);
 
     });
@@ -26,7 +26,7 @@ $( document ).ready(function() {
 
         $('#statusMessage').html('Waiting Update...');
 
-        var url = "http://webservicelayer.info/updateWorship";
+        var url = "http://webservicelayer.info.dev/updateWorship";
         makeCall(url, data);
 
     });
@@ -42,7 +42,7 @@ $( document ).ready(function() {
 
         $('#statusMessage').html('Waiting Update...');
 
-        var url = "http://webservicelayer.info/updateWorship";
+        var url = "http://webservicelayer.info.dev/updateWorship";
         makeCall(url, data);
 
     });

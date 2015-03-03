@@ -5,14 +5,14 @@ namespace Slim\Model;
 class Worship
 {
 
-    private $church;
+    private $collection;
     private $instance;
 
     public function __construct() {
 
         $m = new \MongoClient();
         $db = $m->selectDB('test');
-        $this->church = $db->selectCollection('church');
+        $this->collection = $db->selectCollection('church');
 
         $this->instance = \Slim\Slim::getInstance();
 
@@ -20,14 +20,14 @@ class Worship
 
     public function removeOne($_id)
     {
-        $row = $this->church->findOne(array('_id' => new \MongoId($_id)));
-        $this->church->remove(array('_id'  => $row['_id']));
+        $row = $this->collection->findOne(array('_id' => new \MongoId($_id)));
+        $this->collection->remove(array('_id'  => $row['_id']));
         $this->instance->redirect('/');
     }
 
     public function viewWorship($_id)
     {
-        $result = $this->church->findOne(array('_id' => new \MongoId($_id)));
+        $result = $this->collection->findOne(array('_id' => new \MongoId($_id)));
 
         echo '<div>';
         echo '<div style="text-align: right;"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /></a></div>';
@@ -57,7 +57,7 @@ class Worship
             echo '<div style="text-align: right"><a href="https://github.com/limaedu/webservicelayer" target="_blank"><img src="http://webservicelayer.com/img/github.jpg" /></a></div>';
             echo '<div style="text-align: left"><a href="https://webservicelayer.com" target="_blank"><img src="http://webservicelayer.com/img/logo_WSL.png" style="width: 100px;" /><a/></div>';
 
-            if ($this->church->count() == 0){
+            if ($this->collection->count() == 0){
 
 
                 echo "<br/><h1>Database is empty!</h1><br/>";
@@ -71,7 +71,7 @@ class Worship
 
             }
 
-            $results = $this->church->find();
+            $results = $this->collection->find();
             foreach ($results as $result) {
 
                 foreach ($result as $key => $value) {
@@ -100,7 +100,7 @@ class Worship
         $response = array();
         $this->instance->response()->header('Access-Control-Allow-Origin: *');
         $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
-        $results = $this->church->find();
+        $results = $this->collection->find();
         foreach ($results as $result) {
             $response[] = $result;
         }
@@ -129,7 +129,7 @@ class Worship
             "yt_link"  => $church->yt_link
         );
 
-        $result = $this->church->insert($content);
+        $result = $this->collection->insert($content);
         \Libs\Log::mongo($result);
 
         echo json_encode($result);
@@ -158,9 +158,9 @@ class Worship
             "yt_link"  => $church->yt_link
         );
 
-        $row = $this->church->findOne(array('_id' => new \MongoId($church->_id)));
+        $row = $this->collection->findOne(array('_id' => new \MongoId($church->_id)));
 
-        $result = $this->church->update(
+        $result = $this->collection->update(
             array('_id'  => $row['_id']),
             array('$set' => $updateContent)
         );
@@ -177,9 +177,9 @@ class Worship
         $church = json_decode($request->getBody());
         \Libs\Log::mongo($church);
 
-        $row = $this->church->findOne(array('_id' => new \MongoId($church->_id)));
+        $row = $this->collection->findOne(array('_id' => new \MongoId($church->_id)));
 
-        $result = $this->church->remove(array('_id'  => $row['_id']));
+        $result = $this->collection->remove(array('_id'  => $row['_id']));
 
         echo json_encode($result);
 
@@ -187,7 +187,7 @@ class Worship
 
     public function remove()
     {
-        $this->church->remove();
+        $this->collection->remove();
         $this->instance->redirect('/');
     }
 
