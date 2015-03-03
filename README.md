@@ -44,8 +44,6 @@ This example was developed only with .html files and .js, without any back-end l
 
 ![webservicelayer.Exemp2](http://webservicelayer.com/img/ex_3.png)
 
-Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
-
 ##Install Features
 
 ###Install Curl
@@ -95,9 +93,7 @@ Obs: according to the Jquery reference, are not all browsers that accept PUT and
 
 Oh right! Let's find out how this RestFull API application works in practice:
 
-##Need to view?
-WebApi http://webservicelayer.info
-![View](http://webservicelayer.com/img/view_api.png)
+Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
 
 ##Need to Add?
 > curl -i -X POST -H 'Content-Type: application/json' -d '{"campaign": "Natal 2015", "pr_name": "Ari", "mp3_link": "http://webservicelayer.com/audios/ari_natal_2015.mp3", "yt_link": "https://www.youtube.com/embed/aJzh0u1DcMk" }' http://webservicelayer.info/addWorship
