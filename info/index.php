@@ -25,6 +25,8 @@ $app->post('/addWorship', function () use ($worship) { $worship->addWorship(); }
 
 $app->post('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
 
-$app->post('/deleteWorship', function () use ($worship) { $worship->deleteWorship(); });
+$app->put('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
+
+$app->delete('/deleteWorship', function () use ($worship) { $worship->deleteWorship(); });
 
 $app->run();
