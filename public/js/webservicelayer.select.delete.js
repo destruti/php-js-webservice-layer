@@ -5,7 +5,12 @@ $( document ).ready(function() {
 
         try {
 
-            var url = "http://webservicelayer.info.dev/view";
+            var username = 'test';
+            var password = 'test';
+
+            $('#statusMessage').html('Start - ' + username + ' - ' + password);;
+
+            var url = "http://root:root@webservicelayer.info.dev/view";
             var jqxhr = $.ajax( url )
                 .done(function(data) {
 

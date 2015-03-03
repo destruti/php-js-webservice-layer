@@ -9,6 +9,13 @@ $app = new \Slim\Slim(array( 'debug' => true ));
 
 $worship = new \Slim\Model\Worship();
 
+$app->add(new \Slim\Middleware\HttpBasicAuthentication(array(
+    "realm" => "Protected",
+    "users" => array(
+        "root" => "roots"
+    )
+)));
+
 $app->get('/', function () use ($worship) { $worship->getAllWorships(); });
 
 $app->get('/church', function () use ($worship) { $worship->getAllWorships(); });

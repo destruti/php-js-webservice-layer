@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     $vendorDir . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+    $vendorDir . '/ircmaxell/password-compat/lib/password.php',
+    $vendorDir . '/tuupola/slim-basic-auth/src/Slim/Middleware/HttpBasicAuthentication.php',
 );

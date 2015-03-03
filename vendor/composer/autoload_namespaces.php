@@ -8,7 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'phpDocumentor' => array($vendorDir . '/phpdocumentor/reflection-docblock/src'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
-    'Slim' => array($baseDir . '/'),
+    'Slim\\Middleware\\' => array($vendorDir . '/tuupola/slim-basic-auth/src'),
+    'Slim' => array($baseDir . '/', $vendorDir . '/slim/slim'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src'),
 );
