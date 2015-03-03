@@ -83,7 +83,7 @@ This example was developed only with .html files and .js, without any back-end l
 
 > extension=mongo.so
 
-###Done?
+###Just to complete instalation
 > sudo /etc/init.d/apache2 restart
 
 > composer install
