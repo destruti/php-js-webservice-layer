@@ -5,22 +5,28 @@ $( document ).ready(function() {
 
         try {
 
-            var username = 'test';
-            var password = 'test';
+            $('#statusMessage').html(' hashClient - ' + $('#hashClient').val() );
 
-            $('#statusMessage').html('Start - ' + username + ' - ' + password);;
+            var data = [{ hashClient: $('#hashClient').val() }];
+            var restData = JSON.stringify(data);
 
-            var url = "http://root:root@webservicelayer.info.dev/view";
-            var jqxhr = $.ajax( url )
-                .done(function(data) {
+            $.ajax({
+                type : 'POST',
+                url  : 'http://webservicelayer.info.dev/view',
+                data : restData,
+
+                success: function(data) {
+
+                    $('#statusMessage').html(' done! ');
 
                     console.log(data);
                     makeTable(data);
+                },
 
-                })
-                .fail(function() {
-                    $('#statusMessage').html('Error');
-                });
+                error: function() { $('#statusMessage').html('Error'); }
+
+            });
+
 
         }
         catch(err) {

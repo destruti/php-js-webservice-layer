@@ -5,35 +5,28 @@ require '../vendor/autoload.php';
 \Slim\Slim::registerAutoloader();
 
 //$app = new \Slim\Slim();
-$app = new \Slim\Slim(array( 'debug' => true ));
+$app = new \Slim\Slim();
 
-$worship = new \Slim\Model\Worship();
+$clientDatabase = new \Slim\Model\clientDatabase();
 
-$app->add(new \Slim\Middleware\HttpBasicAuthentication(array(
-    "realm" => "Protected",
-    "users" => array(
-        "root" => "roots"
-    )
-)));
+$app->get('/', function () use ($clientDatabase) { $clientDatabase->getAllClientDatabases(); });
 
-$app->get('/', function () use ($worship) { $worship->getAllWorships(); });
+$app->get('/church', function () use ($clientDatabase) { $clientDatabase->getAllClientDatabases(); });
 
-$app->get('/church', function () use ($worship) { $worship->getAllWorships(); });
+$app->get('/clientDatabase/:_id', function ($_id) use ($clientDatabase) { $clientDatabase->viewClientDatabase($_id); });
 
-$app->get('/worship/:_id', function ($_id) use ($worship) { $worship->viewWorship($_id); });
+$app->get('/remove', function () use ($clientDatabase) { $clientDatabase->remove(); });
 
-$app->get('/remove', function () use ($worship) { $worship->remove(); });
+$app->get('/removeOne/:_id', function ($_id) use ($clientDatabase) { $clientDatabase->removeOne($_id); });
 
-$app->get('/removeOne/:_id', function ($_id) use ($worship) { $worship->removeOne($_id); });
+$app->post('/view', function () use ($clientDatabase) { $clientDatabase->view(); });
 
-$app->get('/view', function () use ($worship) { $worship->view(); });
+$app->post('/addClientDatabase', function () use ($clientDatabase) { $clientDatabase->addClientDatabase(); });
 
-$app->post('/addWorship', function () use ($worship) { $worship->addWorship(); });
+$app->post('/updateClientDatabase', function () use ($clientDatabase) { $clientDatabase->updateClientDatabase(); });
 
-$app->post('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
+$app->put('/updateClientDatabase', function () use ($clientDatabase) { $clientDatabase->updateClientDatabase(); });
 
-$app->put('/updateWorship', function () use ($worship) { $worship->updateWorship(); });
-
-$app->delete('/deleteWorship', function () use ($worship) { $worship->deleteWorship(); });
+$app->delete('/deleteClientDatabase', function () use ($clientDatabase) { $clientDatabase->deleteClientDatabase(); });
 
 $app->run();
