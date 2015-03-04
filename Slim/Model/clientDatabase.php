@@ -166,29 +166,10 @@ class clientDatabase
     public function addClientDatabase()
     {
 
-//        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
-//        $request = $this->instance->request();
-//        $data = json_decode($request->getBody());
-//
-//        if ($data == null) {
-//            throw new \Exception('We dont see any parameters!');
-//        }
-//
-//        if (is_array($data)) $data = $data[0];
-
         $this->setJsonResponse();
 
         $content = $this->setContent();
         $content["created"] = new \MongoDate();
-
-//        $content = array(
-//            "created"  => new \MongoDate(),
-//            "updated"  => new \MongoDate(),
-//            "campaign" => $data->campaign,
-//            "pr_name"  => $data->pr_name,
-//            "mp3_link" => $data->mp3_link,
-//            "yt_link"  => $data->yt_link
-//        );
 
         $result = $this->collection->insert($content);
         log::mongo($result);
@@ -219,12 +200,11 @@ class clientDatabase
     public function deleteClientDatabase()
     {
 
-        $this->instance->response()->header('Content-Type', 'application/json;charset=utf-8');
-        $request = $this->instance->request();
-        $data = json_decode($request->getBody());
-        log::mongo($data);
+        $this->setJsonResponse();
 
-        $row = $this->collection->findOne(array('_id' => new \MongoId($data->_id)));
+        $content = $this->setContent();
+
+        $row = $this->collection->findOne(array('_id' => new \MongoId($this->content['_id'])));
 
         $result = $this->collection->remove(array('_id'  => $row['_id']));
 
