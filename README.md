@@ -1,8 +1,6 @@
 # Web Service Layer
 ### A project from [Eduardo Destruti](http://destruti.com/)
 
-##(README must be updated, we have new features)
-
 ###WebSite [webservicelayer.com](http://webservicelayer.com/)
 only a web presentation to explain how the system works layers.
 but website already using WSL structure to get your informations. clone and study project to understand.
