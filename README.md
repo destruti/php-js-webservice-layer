@@ -1,6 +1,7 @@
 # Web Service Layer
 
-## A project from [Eduardo Destruti](http://destruti.com/)
+##(ATENTION!!! README must be updated, we have new features)
+### A project from [Eduardo Destruti](http://destruti.com/)
 
 ###WebSite [webservicelayer.com](http://webservicelayer.com/)
 only a web presentation to explain how the system works layers
@@ -12,11 +13,9 @@ This layer should be brought to power websites or mobile applications.
 To complement the complexity of the project was implemented one NoSql MongoDB database layer.
 The next step will be to implement unit tests.
 
-###JS WebServiceLayer
+###JS WebServiceLayer Examples
 
-[JS: Insert and Update](http://webservicelayer.com/js/webservicelayer.insert.update.js)
-
-[JS: Select and Delete](http://webservicelayer.com/js/webservicelayer.select.delete.js)
+[JS Package](http://webservicelayer.com/js/church/)
 
 This project intends to carry out communication between the layers.
 To integrate the tip of a non-relational database mongodb with a js file with jquery ajax requests, we created two files to be integrated into any website.
