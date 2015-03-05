@@ -4,38 +4,47 @@
 ##(README must be updated, we have new features)
 
 ###WebSite [webservicelayer.com](http://webservicelayer.com/)
-only a web presentation to explain how the system works layers
+only a web presentation to explain how the system works layers.
+but website already using WSL structure to get your informations. clone and study project to understand.
 
 ###Service Layer [webservicelayer.info](http://webservicelayer.info/)
 This project was created to demonstrate the use of a PHP Micro Framework Slim using calls Restfull APIs to make data management.
 This layer should be brought to power websites or mobile applications.
+we don't create correctly restful methods because our intention was integrate finally with a JS layer. but if you need is a easy and simple work.
 
-To complement the complexity of the project was implemented one NoSql MongoDB database layer.
-The next step will be to implement unit tests.
+To complement the complexity and velocity of the project was implemented one NoSql MongoDB database layer.
+This project have a folder called dump/
+if you need a example database is only execute in your local database.
 
 ###JS WebServiceLayer Examples
 
-[JS Package](http://webservicelayer.com/js/church/)
+[JS Link Package Example](http://webservicelayer.com/js/church/)
 
-This project intends to carry out communication between the layers.
-To integrate the tip of a non-relational database mongodb with a js file with jquery ajax requests, we created two files to be integrated into any website.
-
+This project intends to carry out communication between four layers.
+To integrate all the tips of a non-relational database mongodb with a JS layer with jquery ajax requests, we created two files to be integrated into any website.
+According to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls.
+and to call have some security, we must call all informations with a client key.
+At this case, all JS integration must send in modified HEADERS to POST.
 
 ## What is a Web Service Layer?
 
-A services is an abstraction layer placed on top of the domain model which encapsulates common application logic behind a single API so that it can be easily consumed by different client layers.
+A services is an abstraction layer placed on top of the domain model which encapsulates common application logic behind a single API.
+That it can be easily consumed by different client layers, including a new JS layer model.
 
 ![WebServiceLayer Exp.](http://webservicelayer.com/img/WebServiceLayer_explanation.png)
 
 #Example Usage
 
-##[Example Page -> http://webservicelayer.com/example/](http://webservicelayer.com/example/)
+##[Example Page -> http://webservicelayer.com/example/](http://webservicelayer.com/examples/church/)
 
 We developed a page with the complete integration of all layers to make it simple to understand the project.
+All calls must have a client key. In this example, we use a example client "church", put in a input type hidden of html file.
+
+> <input type="hidden" id="hashClient" value="church">
 
 ![webservicelayer.Exemp1](http://webservicelayer.com/img/html.png)
 
-This example was developed only with .html files and .js, without any back-end language.
+This example works only with .html and .js files, without any back-end language.
 
 ![webservicelayer.Exemp1](http://webservicelayer.com/img/ex_1.png)
 
@@ -43,7 +52,6 @@ This example was developed only with .html files and .js, without any back-end l
 
 ![webservicelayer.Exemp2](http://webservicelayer.com/img/ex_3.png)
 
-Obs: according to the Jquery reference, are not all browsers that accept PUT and DELETE Rest calls. For the system run according to his purpose, purposely we modified the HEADERS to POST.
 
 ##Install Features
 
