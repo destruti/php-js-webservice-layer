@@ -9,8 +9,6 @@
 		<meta name="keywords" content="web, service, layer, webservice, layer, php, phpunit, slim, restful" />
 		<meta name="author" content="Eduardo Destruti" />
 
-		<meta name="google-site-verification" content="ZEWqJw1uvxJF8QGEM9YE7xVF_3RU1EPZSQRTogZIRhs" />
-
 		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">

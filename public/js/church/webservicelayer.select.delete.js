@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-    viewRegisters();
     function viewRegisters() {
 
         try {
