@@ -31,7 +31,7 @@ At this case, all JS integration must send in modified HEADERS to POST.
 A services is an abstraction layer placed on top of the domain model which encapsulates common application logic behind a single API.
 That it can be easily consumed by different client layers, including a new JS layer model.
 
-![WebServiceLayer Exp.](http://webservicelayer.com/img/WebServiceLayer_explanation.png)
+![WebServiceLayer Exp.](http://webservicelayer.com/img/v2/WebServiceLayer_explanation.png)
 
 #Example Usage
 
@@ -42,7 +42,7 @@ All calls must have a client key. In this example, we use a example client "chur
 
 > <input type="hidden" id="hashClient" value="church">
 
-![webservicelayer.Exemp1](http://webservicelayer.com/img/html.png)
+![webservicelayer.Exemp1](http://webservicelayer.com/img/v2/html.png)
 
 This example works only with .html and .js files, without any back-end language.
 
@@ -93,6 +93,9 @@ This example works only with .html and .js files, without any back-end language.
 > extension=mongo.so
 
 ###To finish
+
+> mongorestore /path/to/dump/folder/
+
 > sudo a2enmod headers
 
 > sudo /etc/init.d/apache2 restart
