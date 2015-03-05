@@ -97,7 +97,7 @@ $( document ).ready(function() {
                     success: function(data) {
 
                         $('#statusMessage').html('Success');
-                        window.location.href = '/examples/wsl_website/';
+                        window.location.href = '/examples/church/';
                     },
 
                     error: function() { $('#statusMessage').html('Error'); }
