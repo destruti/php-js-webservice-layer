@@ -33,11 +33,11 @@ class clientDatabase
 
         log::mongo($request->headers);
 
-        if (false === $this->isAcceptableCall($request->headers->Referer, $this->content['hashClient'])) {
+        if (false === $this->isAcceptableCall($request->headers->Origin, $this->content['hashClient'])) {
             log::mongo('Uou! '.$request->headers->Referer.' is not acceptable to Collection '.$this->content['hashClient']);
-            throw new \Exception('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
+            throw new \Exception('Call from '.$request->headers->Origin.' is not acceptable. Please contact WSL Admin!');
         } else {
-            log::mongo('New Call from '.$request->headers->Referer.' getting informations of Collection ' . $this->content['hashClient']);
+            log::mongo('New Call from '.$request->headers->Origin.' getting informations of Collection ' . $this->content['hashClient']);
         }
 
         if ($this->content == null) {
@@ -48,7 +48,7 @@ class clientDatabase
 
     }
 
-    public function isAcceptableCall($referer, $hashClient)
+    public function isAcceptableCall($origin, $hashClient)
     {
         $acceptables = $this->db->selectCollection('acceptable');
 
@@ -63,7 +63,7 @@ class clientDatabase
 
         }
 
-        if (in_array($referer, $whiteList)) {
+        if (in_array($origin, $whiteList)) {
             return true;
         }
 
