@@ -86,6 +86,8 @@ Obs: according to the Jquery reference, are not all browsers that accept PUT and
 > extension=mongo.so
 
 ###To finish
+> sudo a2enmod headers
+
 > sudo /etc/init.d/apache2 restart
 
 > composer install

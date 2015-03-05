@@ -89,7 +89,7 @@ $( document ).ready(function() {
                 var jqxhr = $.ajax( url )
                     .done(function(data) {
                         $('#statusMessage').html('Success');
-                        window.location.href = '/example/';
+                        window.location.href = '/examples/church/';
                     })
                     .fail(function() {
                         $('#statusMessage').html('Error');

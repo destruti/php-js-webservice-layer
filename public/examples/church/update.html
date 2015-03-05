@@ -8,7 +8,31 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="../js/webservicelayer.insert.update.js"></script>
+    <script src="../../js/church/webservicelayer.insert.update.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+
+            var $_GET = {};
+
+            document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+                function decode(s) {
+                    return decodeURIComponent(s.split("+").join(" "));
+                }
+
+                $_GET[decode(arguments[1])] = decode(arguments[2]);
+            });
+
+            $('#_id').val($_GET._id);
+            $('#campaign').val($_GET.campaign);
+            $('#pr_name').val($_GET.pr_name);
+            $('#mp3_link').val($_GET.mp3_link);
+            $('#yt_link').val($_GET.yt_link);
+
+        });
+
+
+    </script>
 
 </head>
 <body style="text-align: center; font-family: 'PT Sans Narrow', sans-serif; ">
@@ -32,15 +56,16 @@
     <br/>
     <br/>
 
-    <br/><br/>Field: campaign &nbsp;&nbsp; <input type="text" id="campaign" name="campaign" value="">
+    <br/><br/>Field: _id      &nbsp;&nbsp; <input type="text" id="_id" name="_id" value="" disabled>
+    <br/><br/>Field: campaign &nbsp;&nbsp; <input type="text" id="campaign" name="campaign" >
     <br/><br/>Field: pr_name  &nbsp;&nbsp; <input type="text" id="pr_name" name="pr_name" value="">
-    <br/><br/>Field: mp3_link &nbsp;&nbsp; <input type="text" id="mp3_link" name="mp3_link" value="http://webservicelayer.info/audios/destruti.mp3">
-    <br/><br/>Field: yt_link  &nbsp;&nbsp; <input type="text" id="yt_link" name="yt_link" value="https://www.youtube.info/embed/aJzh0u1DcMk">
+    <br/><br/>Field: mp3_link &nbsp;&nbsp; <input type="text" id="mp3_link" name="mp3_link" value="">
+    <br/><br/>Field: yt_link  &nbsp;&nbsp; <input type="text" id="yt_link" name="yt_link" value="">
 
     <br/><br/>
     <br/><br/>
 
-    <input type="button" id="insert_btn" value="INSERT">
+    <input type="button" id="update_btn" value="UPDATE">
 
     <br/><br/>
     <div id="statusMessage"></div>

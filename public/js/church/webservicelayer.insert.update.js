@@ -62,7 +62,7 @@ $( document ).ready(function() {
 
                 if (res.ok == '1') {
                     $('#statusMessage').html('Success');
-                    window.location.href = '/example/';
+                    window.location.href = '/examples/church/';
                 } else {
                     $('#statusMessage').html('Error');
                 }
