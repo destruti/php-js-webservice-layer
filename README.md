@@ -100,10 +100,15 @@ This example works only with .html and .js files, without any back-end language.
 
 > composer install
 
+
+###View Log File
+
+> tail -f -n50 /tmp/mongo.log
+
+
 ###UnitTest
 
 >phpunit tests/
-
 
 
 #Usage: Go to Work!
