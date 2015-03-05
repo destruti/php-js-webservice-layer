@@ -47,6 +47,10 @@ $( document ).ready(function() {
 
         $.map( fields, function( obj ) {
 
+            if (obj.key == 'website_title') {
+                document.title = obj.value;
+            }
+
             console.log(obj);
 
             $('#' + obj.key).html( obj.value );
