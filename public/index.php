@@ -31,10 +31,16 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
 		<script src="js/modernizr.custom.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="js/wsl_website/webservicelayer.singleCall.js"></script>
+
 	</head>
 	<body>
 		<div class="container">
+
+			<input type="hidden" id="hashClient" value="wsl_website">
 
 			<!-- Top Navigation -->
 			<header>
@@ -46,12 +52,8 @@
 
 			<section class="col-2 ss-style-triangles">
 				<div class="column text">
-					<h2>a new way to organize your calls on the web</h2>
-					<p>
-						a new way to organize your calls on the web
-						a new way to organize your calls on the web
-						a new way to organize your calls on the web
-					</p>
+					<h2 id="organize_title"></h2>
+					<p id="organize_content"></p>
 				</div>
 				<div class="column">
 					<span class="icon icon-headphones"></span>
@@ -60,80 +62,48 @@
 
 
 			<section class="color">
-				<h2>which is a service layer?</h2>
-				<p>
-					which is a service layer? which is a service layer? which is a service layer?
-					which is a service layer? which is a service layer? which is a service layer?
-					which is a service layer? which is a service layer? which is a service layer?
-					which is a service layer? which is a service layer? which is a service layer?
-					which is a service layer? which is a service layer? which is a service layer?
-					which is a service layer? which is a service layer? which is a service layer?
-				</p>
+				<h2 id="servicelayer_title"></h2>
+				<p id="servicelayer_content"></p>
 			</section>
 
 
 			<section class="col-3 ss-style-doublediagonal">
 				<div class="column">
 					<span class="icon icon-home"></span>
-					<p>
-						datalayer datalayer datalayer datalayer datalayer datalayer
-						datalayer datalayer datalayer datalayer datalayer datalayer
-						datalayer datalayer datalayer datalayer datalayer datalayer
-					</p>
+					<p id="datalayer_step_content"></p>
 				</div>
 				<div class="column">
 					<span class="icon icon-bullhorn"></span>
-					<p>
-						domainlayer domainlayer domainlayer domainlayer domainlayer
-						domainlayer domainlayer domainlayer domainlayer domainlayer
-						domainlayer domainlayer domainlayer domainlayer domainlayer
-					</p>
+					<p id="datadomain_step_content"></p>
 				</div>
 				<div class="column">
 					<span class="icon icon-blog"></span>
-					<p>
-						servicelayer servicelayer servicelayer servicelayer servicelayer
-						servicelayer servicelayer servicelayer servicelayer servicelayer
-						servicelayer servicelayer servicelayer servicelayer servicelayer
-					</p>
+					<p id="servicelayer_step_content"></p>
 				</div>
 			</section>
+
 			<section class="col-2 ss-style-halfcircle">
 				<div class="column">
 					<span class="icon icon-images"></span>
 				</div>
 				<div class="column text">
-					<h2>we are always online</h2>
-					<p>
-						we are always online we are always online we are always online we are always online we are always online
-						we are always online we are always online we are always online we are always online we are always online
-						we are always online we are always online we are always online we are always online we are always online
-					</p>
+					<h2 id="online_title"></h2>
+					<p id="online_content"></p>
 				</div>
 			</section>
+
 			<section class="color ss-style-bigtriangle">
-				<h2>we focus on the security of your information</h2>
-				<p>
-					we focus on the security of your information we focus on the security of your information
-					we focus on the security of your information we focus on the security of your information
-					we focus on the security of your information we focus on the security of your information
-					we focus on the security of your information we focus on the security of your information
-				</p>
+				<h2 id="security_title"></h2>
+				<p id="security_content"></p>
 			</section>
+
 			<svg id="bigTriangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
 				<path id="trianglePath1" d="M0 0 L50 100 L100 0 Z" />
 				<path id="trianglePath2" d="M50 100 L100 40 L100 0 Z" />
 			</svg>
 			<section>
-				<h2>we use nosql database</h2>
-				<p>
-					we use nosql database we use nosql database we use nosql database
-					we use nosql database we use nosql database we use nosql database
-					we use nosql database we use nosql database we use nosql database
-					we use nosql database we use nosql database we use nosql database
-					we use nosql database we use nosql database we use nosql database
-					we use nosql database we use nosql database we use nosql database
-				</p>
+				<h2 id="nosql_title"></h2>
+				<p id="nosql_content"></p>
 			</section>
 			<svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
 				<path d="M-5 100 Q 0 20 5 100 Z

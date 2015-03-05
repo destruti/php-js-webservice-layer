@@ -17,7 +17,7 @@ $app->get('/clientDatabase/:_id', function ($_id) use ($clientDatabase) { $clien
 
 $app->get('/remove', function () use ($clientDatabase) { $clientDatabase->remove(); });
 
-$app->get('/removeOne/:_id', function ($_id) use ($clientDatabase) { $clientDatabase->removeOne($_id); });
+$app->post('/removeOne/:_id', function ($_id) use ($clientDatabase) { $clientDatabase->removeOne($_id); });
 
 $app->post('/view', function () use ($clientDatabase) { $clientDatabase->view(); });
 

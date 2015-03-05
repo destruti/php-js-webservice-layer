@@ -1,0 +1,73 @@
+$( document ).ready(function() {
+
+    $( "#insert_btn" ).click(function() {
+
+        var key   = $('#key').val();
+        var value = $('#value').val();
+        var data  = [{ hashClient: $('#hashClient').val(),  key: key, value: value, _method: 'post' }];
+
+        $('#statusMessage').html('Waiting Insert...');
+
+        url = "http://webservicelayer.info.dev/addClientDatabase";
+        makeCall(url, data);
+
+    });
+
+    $( "#update_btn" ).click(function() {
+
+        var _id   = $('#_id').val();
+        var key   = $('#key').val();
+        var value = $('#value').val();
+        var data  = [{ hashClient: $('#hashClient').val(), _id: _id, key: key, value: value, _method: 'post' }];
+
+        $('#statusMessage').html('Waiting Update...');
+
+        var url = "http://webservicelayer.info.dev/updateClientDatabase";
+        makeCall(url, data);
+
+    });
+
+    $( "#delete_btn" ).click(function() {
+
+        var _id   = $('#_id').val();
+        var key   = $('#key').val();
+        var value = $('#value').val();
+        var data  = [{ hashClient: $('#hashClient').val(), _id: _id, key: key, value: value, _method: 'post' }];
+
+        $('#statusMessage').html('Waiting Update...');
+
+        var url = "http://webservicelayer.info.dev/deleteClientDatabase";
+        makeCall(url, data);
+
+    });
+
+    function makeCall(url, data) {
+
+        try {
+
+            $('#statusMessage').html(' hashClient - ' + $('#hashClient').val() );
+
+            var restData = JSON.stringify(data);
+
+            request = $.post(url, restData);
+            request.done(function(res){
+
+                console.log(res);
+
+                if (res.ok == '1') {
+                    $('#statusMessage').html('Success');
+                    window.location.href = '/examples/wsl_website/';
+                } else {
+                    $('#statusMessage').html('Error');
+                }
+
+            });
+
+        }
+        catch(err) {
+            $('#statusMessage').html('Error: ' + err.message);
+        }
+
+    }
+
+});
