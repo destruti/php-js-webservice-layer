@@ -59,11 +59,11 @@ class clientDatabase
         foreach ($results as $result) {
 
             if ($result['call'] == '*') return true;
-            $whiteList[] = $result['call'].'/';
+            $whiteList[] = $result['call'];
 
         }
 
-        if (in_array($origin, $whiteList)) {
+        if (in_array($origin.'/', $whiteList)) {
             return true;
         }
 
