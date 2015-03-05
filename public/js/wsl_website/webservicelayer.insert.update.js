@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+    var devEnabled = false;
+
+    var live   = "http://webservicelayer.info";
+    var source = "http://webservicelayer.info.dev";
+    if (devEnabled == false) source = live;
+
     $( "#insert_btn" ).click(function() {
 
         var key   = $('#key').val();
@@ -8,7 +14,7 @@ $( document ).ready(function() {
 
         $('#statusMessage').html('Waiting Insert...');
 
-        url = "http://webservicelayer.info.dev/addClientDatabase";
+        url = source+"/addClientDatabase";
         makeCall(url, data);
 
     });
@@ -22,7 +28,7 @@ $( document ).ready(function() {
 
         $('#statusMessage').html('Waiting Update...');
 
-        var url = "http://webservicelayer.info.dev/updateClientDatabase";
+        var url = source+"/updateClientDatabase";
         makeCall(url, data);
 
     });
@@ -36,7 +42,7 @@ $( document ).ready(function() {
 
         $('#statusMessage').html('Waiting Update...');
 
-        var url = "http://webservicelayer.info.dev/deleteClientDatabase";
+        var url = source+"/deleteClientDatabase";
         makeCall(url, data);
 
     });

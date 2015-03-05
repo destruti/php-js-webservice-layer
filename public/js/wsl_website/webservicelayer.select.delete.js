@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+    var devEnabled = false;
+
+    var live   = "http://webservicelayer.info";
+    var source = "http://webservicelayer.info.dev";
+    if (devEnabled == false) source = live;
+
     viewRegisters();
     function viewRegisters() {
 
@@ -12,7 +18,7 @@ $( document ).ready(function() {
 
             $.ajax({
                 type : 'POST',
-                url  : 'http://webservicelayer.info.dev/view',
+                url  : source+'/view',
                 data : restData,
 
                 success: function(data) {
@@ -89,7 +95,7 @@ $( document ).ready(function() {
 
                 $.ajax({
                     type : 'POST',
-                    url  : "http://webservicelayer.info.dev/removeOne/"+this.id,
+                    url  : source+"/removeOne/"+this.id,
                     data : restData,
 
                     success: function(data) {

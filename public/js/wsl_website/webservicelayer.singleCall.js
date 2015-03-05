@@ -1,7 +1,13 @@
 $( document ).ready(function() {
 
-    viewRegisters();
-    function viewRegisters() {
+    var devEnabled = false;
+
+    var live   = "http://webservicelayer.info";
+    var source = "http://webservicelayer.info.dev";
+    if (devEnabled == false) source = live;
+
+    singleCall();
+    function singleCall() {
 
         try {
 
@@ -12,7 +18,7 @@ $( document ).ready(function() {
 
             $.ajax({
                 type : 'POST',
-                url  : 'http://webservicelayer.info.dev/view',
+                url  : source+'/view',
                 data : restData,
 
                 success: function(data) {
