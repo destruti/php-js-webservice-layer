@@ -31,30 +31,41 @@ class clientDatabase
             $this->content['hashClient'] = 'church';
         }
 
-        if ($this->content['hashClient'] == 'wsl_website') {
-
-            // log::mongo($request->headers->Host );
-            // log::mongo($request->headers->Origin );
-            // log::mongo($request->headers->Referer );
-
-            $acceptableList = array(
-                "http://webservicelayer.com/examples/wsl_website/",
-                "http://webservicelayer.com/",
-            );
-
-            if (!in_array($request->headers->Referer, $acceptableList)) {
-                log::mongo('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
-                throw new \Exception('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
-            }
-
+        if (false === $this->isAcceptableCall($request->headers->Referer, $this->content['hashClient'])) {
+            log::mongo('Uou! '.$request->headers->Referer.' is not acceptable to Collection '.$this->content['hashClient']);
+            throw new \Exception('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
+        } else {
+            log::mongo('New Call from '.$request->headers->Referer.' getting informations of Collection ' . $this->content['hashClient']);
         }
-
 
         if ($this->content == null) {
             throw new \Exception('We dont see any parameters!');
         }
 
         $this->collection = $this->db->selectCollection($this->content['hashClient']);
+
+    }
+
+    public function isAcceptableCall($referer, $hashClient)
+    {
+        $acceptables = $this->db->selectCollection('acceptable');
+
+        $mongoQuery = array('hashClient' => $hashClient);
+        $results = $acceptables->find($mongoQuery);
+
+        $whiteList = array();
+        foreach ($results as $result) {
+
+            if ($result['call'] == '*') return true;
+            $whiteList[] = $result['call'];
+
+        }
+
+        if (in_array($referer, $whiteList)) {
+            return true;
+        }
+
+        return false;
 
     }
 
@@ -174,8 +185,6 @@ class clientDatabase
     public function view()
     {
         $this->setJsonResponse();
-
-        log::mongo('view');
 
         $response = array();
         $results = $this->collection->find();

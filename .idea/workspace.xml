@@ -44,15 +44,15 @@
       <file leaf-file-name="clientDatabase.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Slim/Model/clientDatabase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73856974" vertical-offset="162" max-vertical-offset="4464">
-              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.4513482" vertical-offset="227" max-vertical-offset="4626">
+              <caret line="34" column="122" selection-start-line="34" selection-start-column="122" selection-end-line="34" selection-end-column="122" />
               <folding>
-                <marker date="1425565619358" expanded="true" signature="2334:2352" placeholder="..." />
-                <marker date="1425565619358" expanded="true" signature="2521:2539" placeholder="..." />
-                <marker date="1425565619358" expanded="true" signature="2657:2670" placeholder="..." />
-                <marker date="1425565619358" expanded="true" signature="3675:3692" placeholder="..." />
-                <marker date="1425565619358" expanded="true" signature="3861:3877" placeholder="..." />
-                <marker date="1425565619358" expanded="true" signature="3995:4008" placeholder="..." />
+                <marker date="1425567177049" expanded="true" signature="2652:2670" placeholder="..." />
+                <marker date="1425567177049" expanded="true" signature="2839:2857" placeholder="..." />
+                <marker date="1425567177049" expanded="true" signature="2975:2988" placeholder="..." />
+                <marker date="1425567177049" expanded="true" signature="3993:4010" placeholder="..." />
+                <marker date="1425567177049" expanded="true" signature="4179:4195" placeholder="..." />
+                <marker date="1425567177049" expanded="true" signature="4313:4326" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -255,50 +255,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wsl_website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webservicelayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="church" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webservicelayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -418,7 +374,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="7" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -426,7 +382,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21618743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21618743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -733,15 +689,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Slim/Model/clientDatabase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73856974" vertical-offset="162" max-vertical-offset="4464">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.4513482" vertical-offset="227" max-vertical-offset="4626">
+          <caret line="34" column="122" selection-start-line="34" selection-start-column="122" selection-end-line="34" selection-end-column="122" />
           <folding>
-            <marker date="1425565619358" expanded="true" signature="2334:2352" placeholder="..." />
-            <marker date="1425565619358" expanded="true" signature="2521:2539" placeholder="..." />
-            <marker date="1425565619358" expanded="true" signature="2657:2670" placeholder="..." />
-            <marker date="1425565619358" expanded="true" signature="3675:3692" placeholder="..." />
-            <marker date="1425565619358" expanded="true" signature="3861:3877" placeholder="..." />
-            <marker date="1425565619358" expanded="true" signature="3995:4008" placeholder="..." />
+            <marker date="1425567177049" expanded="true" signature="2652:2670" placeholder="..." />
+            <marker date="1425567177049" expanded="true" signature="2839:2857" placeholder="..." />
+            <marker date="1425567177049" expanded="true" signature="2975:2988" placeholder="..." />
+            <marker date="1425567177049" expanded="true" signature="3993:4010" placeholder="..." />
+            <marker date="1425567177049" expanded="true" signature="4179:4195" placeholder="..." />
+            <marker date="1425567177049" expanded="true" signature="4313:4326" placeholder="..." />
           </folding>
         </state>
       </provider>
