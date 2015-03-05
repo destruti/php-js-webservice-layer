@@ -125,15 +125,15 @@
       <file leaf-file-name="clientDatabase.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Slim/Model/clientDatabase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5702281" vertical-offset="749" max-vertical-offset="4662">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48379353" vertical-offset="695" max-vertical-offset="4662">
+              <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
               <folding>
-                <marker date="1425593220219" expanded="true" signature="2687:2705" placeholder="..." />
-                <marker date="1425593220219" expanded="true" signature="2874:2892" placeholder="..." />
-                <marker date="1425593220219" expanded="true" signature="3010:3023" placeholder="..." />
-                <marker date="1425593220219" expanded="true" signature="4028:4045" placeholder="..." />
-                <marker date="1425593220219" expanded="true" signature="4214:4230" placeholder="..." />
-                <marker date="1425593220219" expanded="true" signature="4348:4361" placeholder="..." />
+                <marker date="1425593376293" expanded="true" signature="2691:2709" placeholder="..." />
+                <marker date="1425593376293" expanded="true" signature="2878:2896" placeholder="..." />
+                <marker date="1425593376293" expanded="true" signature="3014:3027" placeholder="..." />
+                <marker date="1425593376293" expanded="true" signature="4032:4049" placeholder="..." />
+                <marker date="1425593376293" expanded="true" signature="4218:4234" placeholder="..." />
+                <marker date="1425593376293" expanded="true" signature="4352:4365" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -542,12 +542,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="3060">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <marker date="1425593220219" expanded="true" signature="2687:2705" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="2874:2892" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="3010:3023" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="4028:4045" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="4214:4230" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="4348:4361" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="2691:2709" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="2878:2896" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="3014:3027" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="4032:4049" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="4218:4234" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="4352:4365" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -788,15 +788,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Slim/Model/clientDatabase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5702281" vertical-offset="749" max-vertical-offset="4662">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48379353" vertical-offset="695" max-vertical-offset="4662">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
           <folding>
-            <marker date="1425593220219" expanded="true" signature="2687:2705" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="2874:2892" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="3010:3023" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="4028:4045" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="4214:4230" placeholder="..." />
-            <marker date="1425593220219" expanded="true" signature="4348:4361" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="2691:2709" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="2878:2896" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="3014:3027" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="4032:4049" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="4218:4234" placeholder="..." />
+            <marker date="1425593376293" expanded="true" signature="4352:4365" placeholder="..." />
           </folding>
         </state>
       </provider>
