@@ -1,7 +1,7 @@
 # Web Service Layer
-
-##(ATENTION!!! README must be updated, we have new features)
 ### A project from [Eduardo Destruti](http://destruti.com/)
+
+##(README must be updated, we have new features)
 
 ###WebSite [webservicelayer.com](http://webservicelayer.com/)
 only a web presentation to explain how the system works layers
