@@ -50,7 +50,7 @@ class clientDatabase
     {
         $acceptables = $this->db->selectCollection('acceptable');
 
-        $mongoQuery = array('hashClient' => $hashClient);
+        $mongoQuery = array('hashClient' => '/'.$hashClient.'/');
         $results = $acceptables->find($mongoQuery);
 
         $whiteList = array();
