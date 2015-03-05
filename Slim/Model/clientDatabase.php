@@ -38,9 +38,7 @@ class clientDatabase
             // log::mongo($request->headers->Referer );
 
             $acceptableList = array(
-                "http://webservicelayer.dev/examples/wsl_website/",
                 "http://webservicelayer.com/examples/wsl_website/",
-                "http://webservicelayer.dev/",
                 "http://webservicelayer.com/",
             );
 
