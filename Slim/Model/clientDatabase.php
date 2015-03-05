@@ -20,6 +20,7 @@ class clientDatabase
         $this->instance = \Slim\Slim::getInstance();
 
         $request = $this->instance->request();
+
         $this->content = json_decode($request->getBody(), true);
 
         if (is_array($this->content)) {
@@ -29,6 +30,27 @@ class clientDatabase
         if ($this->content['hashClient'] == '') {
             $this->content['hashClient'] = 'church';
         }
+
+        if ($this->content['hashClient'] == 'wsl_website') {
+
+            // log::mongo($request->headers->Host );
+            // log::mongo($request->headers->Origin );
+            // log::mongo($request->headers->Referer );
+
+            $acceptableList = array(
+                "http://webservicelayer.dev/examples/wsl_website/",
+                "http://webservicelayer.com/examples/wsl_website/",
+                "http://webservicelayer.dev/",
+                "http://webservicelayer.com/",
+            );
+
+            if (in_array($request->headers->Referer, $acceptableList)) {
+                log::mongo('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
+                throw new \Exception('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
+            }
+
+        }
+
 
         if ($this->content == null) {
             throw new \Exception('We dont see any parameters!');
@@ -154,6 +176,8 @@ class clientDatabase
     public function view()
     {
         $this->setJsonResponse();
+
+        log::mongo('view');
 
         $response = array();
         $results = $this->collection->find();

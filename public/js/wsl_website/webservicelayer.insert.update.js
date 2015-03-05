@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    var devEnabled = false;
+    var devEnabled = true;
 
     var live   = "http://webservicelayer.info";
     var source = "http://webservicelayer.info.dev";
