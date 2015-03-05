@@ -42,7 +42,7 @@ class clientDatabase
                 "http://webservicelayer.com/",
             );
 
-            if (in_array($request->headers->Referer, $acceptableList)) {
+            if (!in_array($request->headers->Referer, $acceptableList)) {
                 log::mongo('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
                 throw new \Exception('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
             }
