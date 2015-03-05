@@ -31,6 +31,8 @@ class clientDatabase
             $this->content['hashClient'] = 'church';
         }
 
+        log::mongo($request->headers);
+
         if (false === $this->isAcceptableCall($request->headers->Referer, $this->content['hashClient'])) {
             log::mongo('Uou! '.$request->headers->Referer.' is not acceptable to Collection '.$this->content['hashClient']);
             throw new \Exception('Call from '.$request->headers->Referer.' is not acceptable. Please contact WSL Admin!');
@@ -50,7 +52,7 @@ class clientDatabase
     {
         $acceptables = $this->db->selectCollection('acceptable');
 
-        $mongoQuery = array('hashClient' => '/'.$hashClient.'/');
+        $mongoQuery = array('hashClient' => $hashClient);
         $results = $acceptables->find($mongoQuery);
 
         $whiteList = array();
