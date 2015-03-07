@@ -50,6 +50,9 @@ class clientDatabase
 
     public function isAcceptableCall($origin, $hashClient)
     {
+
+        return true;
+        
         $acceptables = $this->db->selectCollection('acceptable');
 
         $mongoQuery = array('hashClient' => $hashClient);
