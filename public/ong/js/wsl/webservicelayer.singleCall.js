@@ -1,13 +1,15 @@
 $( document ).ready(function() {
 
-    var liveEnv = false;
+    var devEnabled = true;
 
     var live   = "http://webservicelayer.info";
     var source = "http://webservicelayer.info.dev";
-    if (liveEnv == true) source = live;
+    if (devEnabled == false) source = live;
 
     singleCall();
     function singleCall() {
+
+        console.log('Lets get ' + $('#hashClient').val() + ' at ' + source)
 
         try {
 
@@ -47,13 +49,18 @@ $( document ).ready(function() {
 
         $.map( fields, function( obj ) {
 
-            if (obj.key == 'website_title') {
-                document.title = obj.value;
-            }
-
             console.log(obj);
 
-            $('#' + obj.key).html( obj.value );
+            if (obj.key == 'website_title') {
+                document.title = obj.value;
+            } else
+            if (obj.key == 'website_logo') {
+                console.log('???' + obj.value);
+                $("#website_logo").attr("src",obj.value);
+            } else
+            {
+                $('#' + obj.key).html( obj.value );
+            }
 
         });
 

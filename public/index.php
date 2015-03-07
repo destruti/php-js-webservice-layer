@@ -45,7 +45,7 @@
 			<!-- Top Navigation -->
 			<header>
 				<h1>
-					<img src="#" style="width: 200px;" id="website_logo" />
+					<img src="http://webservicelayer.com/img/loading.gif" style="width: 200px;" id="website_logo" />
 					<br/>Web Service Layer
 				</h1>
 			</header>
