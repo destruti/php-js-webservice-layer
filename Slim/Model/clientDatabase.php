@@ -52,7 +52,7 @@ class clientDatabase
     {
 
         return true;
-        
+
         $acceptables = $this->db->selectCollection('acceptable');
 
         $mongoQuery = array('hashClient' => $hashClient);

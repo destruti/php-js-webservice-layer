@@ -47,13 +47,17 @@ $( document ).ready(function() {
 
         $.map( fields, function( obj ) {
 
-            if (obj.key == 'website_title') {
-                document.title = obj.value;
-            }
-
             console.log(obj);
 
-            $('#' + obj.key).html( obj.value );
+            if (obj.key == 'website_title') {
+                document.title = obj.value;
+            } else
+            if (obj.key == 'website_logo') {
+                $("#website_logo").attr("src",obj.value);
+            } else
+            {
+                $('#' + obj.key).html( obj.value );
+            }
 
         });
 

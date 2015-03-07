@@ -45,7 +45,7 @@
 			<!-- Top Navigation -->
 			<header>
 				<h1>
-					<img src="img/logo_WSL.png" style="width: 200px;" />
+					<img src="#" style="width: 200px;" id="website_logo" />
 					<br/>Web Service Layer
 				</h1>
 			</header>
