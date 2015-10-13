@@ -98,7 +98,11 @@ This example works only with .html and .js files, without any back-end language.
 
 > sudo /etc/init.d/apache2 restart
 
-> composer install
+> composer update
+
+### Create Sample Database in Mongo
+
+> mongo create / todo
 
 
 ###View Log File
